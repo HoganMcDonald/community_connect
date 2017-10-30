@@ -1,0 +1,14 @@
+{
+  "name": "community_connect",
+  "version": "1.0.0",
+  "description": "A custom CMS for managing a church community",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hogan McDonald",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.6"
+  }
+}
