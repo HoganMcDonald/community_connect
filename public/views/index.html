@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
   <head>
     <meta charset="utf-8">
     <title>Community Connect</title>
@@ -14,15 +14,22 @@
           <input class="search-input" type="text" name="search">
         </form>
         <ol class="nav-links">
-          <li class="nav-item">Home</li>
-          <li class="nav-item">Profile</li>
-          <li class="nav-item">Login</li>
+          <a href="#"><li class="nav-item">Home</li></a>
+          <a href="#"><li class="nav-item">Profile</li></a>
+          <a href="#"><li class="nav-item">Login</li></a>
         </ol>
       </div>
     </nav>
-    <script src="../vendors/jquery.min.js" charset="utf-8"></script>
-    <script src="../vendors/angular.min.js" charset="utf-8"></script>
-    <script src="../vendors/angular-route.min.js" charset="utf-8"></script>
-    <script src="../scripts/nav.js" charset="utf-8"></script>
+
+    <!-- client side routing -->
+    <ng-view></ng-view>
+
+    <!-- scripts -->
+    <script src="vendors/jquery.min.js" charset="utf-8"></script>
+    <script src="vendors/angular.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-route.min.js" charset="utf-8"></script>
+    <script src="scripts/nav.js" charset="utf-8"></script>
+    <script src="scripts/app.js" charset="utf-8"></script>
+    <script src="scripts/controllers/loginController.js" charset="utf-8"></script>
   </body>
 </html>
