@@ -1,3 +1,6 @@
+//install:
+//npm install gulp gulp-autoprefixer gulp-clean-css gulp-rename gulp-htmlmin gulp-sass --save-dev
+
 //required
 const gulp = require('gulp'),
   autoprefixer = require('gulp-autoprefixer'),

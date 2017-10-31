@@ -1,0 +1,62 @@
+nav
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  background-color: $nav
+  height: 60px
+  width: 100%
+  .container
+    height: 100%
+    width: 90%
+    margin: auto
+    display: flex
+    align-items: center
+    .logo
+      max-height: 40px
+      max-width: 150px
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+    .search
+      height: 100%
+      width: 300px
+      display: flex
+      align-items: center
+      margin-left: 140px
+      .search-input
+        height: 30px
+        width: 200px
+        border:
+          radius: 15px
+          width: 0px
+          style: solid
+        display: inline
+        padding: 0px 40px 0px 20px
+        font:
+          family: $bodyFont
+          size: 16px
+        color: $inputColor
+        &:focus
+          outline: 0
+      .search-icon
+        display: inline
+        position: relative
+        left: 30px
+        height: 20px
+        transition: left 300ms
+    .nav-links
+      display: inline
+      margin-left: auto
+      padding-left: 0px
+      .nav-item
+        display: inline
+        height: 100%
+        margin-left: 40px
+        font:
+          family: $headerFont
+          size: 22px
+        color: $bodyColor
+        transition: color 300ms
+        &:hover
+          color: $accent1
