@@ -1,4 +1,9 @@
 .login-grid
-  height: 50px
-  width: 50px
-  background-color: #39d50f
+  display: grid
+  grid-template-columns: $widgetWidth $widgetWidth
+  grid-column-gap: $widgetGap
+  width: ($widgetWidth + $widgetPadding) * 2 + $widgetGap
+  margin: auto
+  .register
+    
+  .login
