@@ -1,7 +1,19 @@
 .profile-grid
   display: grid
   grid-template-columns: $widgetWidth ($widgetWidth * 2)
-  grid-template-rows: $widgetWidth
+  grid-template-rows: $widgetWidth + ($widgetPadding * 2)
   grid-column-gap: $widgetGap
   grid-row-gap: $widgetGapVertical
   width: ($widgetWidth * 3) + ($widgetPadding * 2) + $widgetGap
+  .photo
+    img
+      width: $widgetWidth
+      height: $widgetWidth
+      border:
+        radius: 50%
+        width: 1px
+        color: $bodyColor
+        style: solid
+  .tags
+    grid-column-start: 1
+    grid-column-end: 3
