@@ -6,4 +6,8 @@ app.config(($routeProvider)=> {
       templateUrl: 'views/partials/login.html',
       controller: 'loginController as lc'
     })
+    .when('/profile', {
+      templateUrl: 'views/partials/profile.html',
+      controller: 'profileController as pc'
+    })
 });
